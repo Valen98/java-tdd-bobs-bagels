@@ -51,11 +51,11 @@ I’d like to change the capacity of baskets.
 
 Manager has role number 0 for Admin
 ```
-| Classes | Member Variable            | Method                                        | Scenario                             | Outcome |
-|---------|----------------------------|-----------------------------------------------|--------------------------------------|---------|
-| Basket  | ArrayList<String> basket   | increaseBasketSize(int memberId, int newSize) | Owner change basket size             | true    |
-|         |                            |                                               | If someone else tries to change size | false   |
-|         |                            |                                               |                                      |         |
+| Classes | Member Variable            | Method                                      | Scenario                             | Outcome |
+|---------|----------------------------|---------------------------------------------|--------------------------------------|---------|
+| Basket  | ArrayList<String> basket   | changeBasketSize(int memberId, int newSize) | Owner change basket size             | true    |
+|         |                            |                                             | If someone else tries to change size | false   |
+|         |                            |                                             |                                      |         |
 
 
 ```
