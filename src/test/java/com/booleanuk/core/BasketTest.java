@@ -47,4 +47,14 @@ class BasketTest {
         Assertions.assertTrue(basket.changeBasketSize(0, 6));
     }
 
+    @Test
+    public void changeBasketSizeWhenFullTest() {
+        Basket basket = new Basket();
+        basket.add("Sesame");
+        basket.add("Sesame");
+        basket.add("Sesame");
+        basket.add("Sesame");
+        Assertions.assertTrue(basket.add("Sesame"));
+    }
+
 }
