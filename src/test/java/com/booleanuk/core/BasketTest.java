@@ -39,4 +39,11 @@ class BasketTest {
         Assertions.assertFalse(basket.add("Plain"));
     }
 
+    @Test
+    public void changeBasketSizeTest(){
+        Basket basket = new Basket();
+
+        Assertions.assertTrue(basket.changeBasketSize(int memberId, int newSize));
+    }
+
 }
