@@ -14,8 +14,14 @@ public class Basket {
     }
 
     public boolean add(String bagel) {
-        basket.add(bagel);
-        return basket.contains(bagel);
+        if(this.basket.size() < this.basketSize) {
+            basket.add(bagel);
+            return basket.contains(bagel);
+        }
+        else {
+            return false;
+        }
+
     }
 
     public boolean remove(String bagel) {
