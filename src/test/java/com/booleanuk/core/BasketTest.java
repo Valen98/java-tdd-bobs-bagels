@@ -6,9 +6,17 @@ import org.junit.jupiter.api.Test;
 class BasketTest {
 
     @Test
-    public void checkAddExistTest() {
+    public void addBagelTest() {
         Basket basket = new Basket();
 
-        Assertions.assertTrue(basket.add(1, "Sesam"));
+        Assertions.assertTrue(basket.add("Sesame"));
     }
+
+    @Test
+    public void removeBagelTest() {
+        Basket basket = new Basket();
+
+        Assertions.assertTrue(basket.remove("Plain"));
+    }
+
 }

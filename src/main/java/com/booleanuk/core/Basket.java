@@ -5,13 +5,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Basket {
-    private ArrayList<String> basket;
+    ArrayList<String> basket;
+    int basketSize;
 
     public Basket() {
         this.basket = new ArrayList<>();
+        this.basketSize = 4;
     }
 
-    public boolean add(int memberId, String bagel) {
+    public boolean add(String bagel) {
+        basket.add(bagel);
+        return basket.contains(bagel);
+    }
+
+    public boolean remove(String bagel) {
         return false;
     }
 }
