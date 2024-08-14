@@ -56,13 +56,16 @@ class BasketTest {
         basket.add("Sesame");
         Assertions.assertFalse(basket.add("Sesame"));
 
+
         Assertions.assertTrue(basket.changeBasketSize(0, 6));
         Assertions.assertTrue(basket.add("Plain"));
         Assertions.assertTrue(basket.add("Plain"));
         //Basket full
         Assertions.assertFalse(basket.add("Plain"));
+        Assertions.assertTrue(basket.changeBasketSize(1, 7));
+        Assertions.assertTrue(basket.add("Plain"));
     }
-
+//$ git commit -m "Checked so normal user cannot change basket size"
     @Test
     public void removeNonExistingBagelTest(){
         Basket basket = new Basket();
