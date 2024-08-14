@@ -19,6 +19,10 @@ public class Basket {
     }
 
     public boolean remove(String bagel) {
+        if(basket.contains(bagel)) {
+            basket.remove(bagel);
+            return true;
+        }
         return false;
     }
 }
