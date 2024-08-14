@@ -1,5 +1,17 @@
 package com.booleanuk.core;
 
-public class Basket {
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
 
+public class Basket {
+    private ArrayList<String> basket;
+
+    public Basket() {
+        this.basket = new ArrayList<>();
+    }
+
+    public boolean add(int memberId, String bagel) {
+        return false;
+    }
 }
