@@ -49,11 +49,11 @@ As a Bob's Bagels manager,
 So that I can expand my business,
 I’d like to change the capacity of baskets.
 ```
-| Classes | Member Variable            | Method                                        | Scenario                 | Outcome         |
-|---------|----------------------------|-----------------------------------------------|--------------------------|-----------------|
-| Basket  | ArrayList<String> basket   | increaseBasketSize(int memberId, int newSize) | Owner change basket size | new basket size |
-|         |                            |                                               |                          |                 |
-|         |                            |                                               |                          |                 |
+| Classes | Member Variable            | Method                                        | Scenario                             | Outcome |
+|---------|----------------------------|-----------------------------------------------|--------------------------------------|---------|
+| Basket  | ArrayList<String> basket   | increaseBasketSize(int memberId, int newSize) | Owner change basket size             | true    |
+|         |                            |                                               | If someone else tries to change size | false   |
+|         |                            |                                               |                                      |         |
 
 
 ```

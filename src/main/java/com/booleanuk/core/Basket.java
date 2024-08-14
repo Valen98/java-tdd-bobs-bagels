@@ -35,4 +35,14 @@ public class Basket {
     public boolean checkBasketSize() {
         return basket.size() <= basketSize;
     }
+
+    public boolean changeBasketSize(int memberId, int newSize) {
+        if(memberId == 0) {
+            this.basketSize = newSize;
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

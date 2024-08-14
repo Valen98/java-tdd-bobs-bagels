@@ -43,7 +43,7 @@ class BasketTest {
     public void changeBasketSizeTest(){
         Basket basket = new Basket();
 
-        Assertions.assertTrue(basket.changeBasketSize(int memberId, int newSize));
+        Assertions.assertTrue(basket.changeBasketSize(1, 1));
     }
 
 }
