@@ -5,4 +5,10 @@ import org.junit.jupiter.api.Test;
 
 class BasketTest {
 
+    @Test
+    public void checkAddExistTest() {
+        Basket basket = new Basket();
+
+        Assertions.assertTrue(basket.add(1, "Sesam"));
+    }
 }
