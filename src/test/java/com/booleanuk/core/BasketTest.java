@@ -34,9 +34,9 @@ class BasketTest {
         basket.add("Mixed");
         basket.add("Everything bagel");
         Assertions.assertTrue(basket.checkBasketSize());
-        
+
         // Try to add basket when full
-        Assertions.assertTrue(basket.add("Plain"));
+        Assertions.assertFalse(basket.add("Plain"));
     }
 
 }
