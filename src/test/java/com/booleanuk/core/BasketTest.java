@@ -68,7 +68,7 @@ class BasketTest {
         Basket basket = new Basket();
         basket.add("Sesame");
         basket.add("Sesame");
-        Assertions.assertTrue(basket.remove("Plain"));
+        Assertions.assertFalse(basket.remove("Plain"));
     }
 
 }
