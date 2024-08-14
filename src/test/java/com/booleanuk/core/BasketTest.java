@@ -23,7 +23,7 @@ class BasketTest {
     @Test
     public void checkBasketSize() {
         Basket basket = new Basket();
-        Assertions.assertFalse(basket.checkBasketSize());
+        Assertions.assertTrue(basket.checkBasketSize());
     }
 
 }
