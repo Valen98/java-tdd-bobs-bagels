@@ -61,7 +61,14 @@ class BasketTest {
         Assertions.assertTrue(basket.add("Plain"));
         //Basket full
         Assertions.assertFalse(basket.add("Plain"));
+    }
 
+    @Test
+    public void removeNonExistingBagelTest(){
+        Basket basket = new Basket();
+        basket.add("Sesame");
+        basket.add("Sesame");
+        Assertions.assertTrue(basket.remove("Plain"));
     }
 
 }
