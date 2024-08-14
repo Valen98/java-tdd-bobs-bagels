@@ -26,4 +26,15 @@ class BasketTest {
         Assertions.assertTrue(basket.checkBasketSize());
     }
 
+    @Test
+    public  void addBagelToFullBasket() {
+        Basket basket = new Basket();
+        basket.add("Plain");
+        basket.add("Sesame");
+        basket.add("Mixed");
+        basket.add("Everything bagel");
+        basket.add("Plain");
+        Assertions.assertTrue(basket.checkBasketSize());
+    }
+
 }

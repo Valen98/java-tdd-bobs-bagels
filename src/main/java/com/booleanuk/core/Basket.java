@@ -27,6 +27,6 @@ public class Basket {
     }
 
     public boolean checkBasketSize() {
-        return basket.size() < basketSize;
+        return basket.size() <= basketSize;
     }
 }
