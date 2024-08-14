@@ -25,4 +25,8 @@ public class Basket {
         }
         return false;
     }
+
+    public boolean checkBasketSize() {
+        return false;
+    }
 }
