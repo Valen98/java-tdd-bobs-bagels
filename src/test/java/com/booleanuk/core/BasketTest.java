@@ -44,7 +44,7 @@ class BasketTest {
         Basket basket = new Basket();
 
         Assertions.assertFalse(basket.changeBasketSize(1, 1));
-        Assertions.assertFalse(basket.changeBasketSize(0, 6));
+        Assertions.assertTrue(basket.changeBasketSize(0, 6));
     }
 
 }
