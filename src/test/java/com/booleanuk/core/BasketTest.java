@@ -62,8 +62,8 @@ class BasketTest {
         Assertions.assertTrue(basket.add("Plain"));
         //Basket full
         Assertions.assertFalse(basket.add("Plain"));
-        Assertions.assertTrue(basket.changeBasketSize(1, 7));
-        Assertions.assertTrue(basket.add("Plain"));
+        Assertions.assertFalse(basket.changeBasketSize(1, 7));
+        Assertions.assertFalse(basket.add("Plain"));
     }
 //$ git commit -m "Checked so normal user cannot change basket size"
     @Test
