@@ -56,8 +56,10 @@ class BasketTest {
         basket.add("Sesame");
         Assertions.assertFalse(basket.add("Sesame"));
 
-        Assertions.assertFalse(basket.changeBasketSize(0, 6));
-        
+        Assertions.assertTrue(basket.changeBasketSize(0, 6));
+        Assertions.assertFalse(basket.add("Plain"));
+        Assertions.assertFalse(basket.add("Plain"));
+
     }
 
 }
