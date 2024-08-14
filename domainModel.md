@@ -48,6 +48,8 @@ I'd like to know when my basket is full when I try adding an item beyond my bask
 As a Bob's Bagels manager,
 So that I can expand my business,
 I’d like to change the capacity of baskets.
+
+Manager has role number 0 for Admin
 ```
 | Classes | Member Variable            | Method                                        | Scenario                             | Outcome |
 |---------|----------------------------|-----------------------------------------------|--------------------------------------|---------|
