@@ -15,8 +15,15 @@ class BasketTest {
     @Test
     public void removeBagelTest() {
         Basket basket = new Basket();
-
+        basket.add("Plain");
         Assertions.assertTrue(basket.remove("Plain"));
+
+    }
+
+    @Test
+    public void checkBasketSize() {
+        Basket basket = new Basket();
+        Assertions.assertTrue(basket.checkBasketSize());
     }
 
 }
